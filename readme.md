@@ -44,5 +44,9 @@ A comprehensive utility library for Xbox 360 homebrew development, providing mod
 
 ## 📥 Installation
 
-1. Copy **`cware.h`** into:
+1. Copy **`cware.h`** into: C:\Program Files (x86)\Microsoft Xbox 360 SDK\include\xbox
 
+2. Include it in your project:
+
+```cpp
+#include <cware.h>
