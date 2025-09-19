@@ -1,37 +1,48 @@
-#CWare Library for Xbox 360
+# CWare Library for Xbox 360
+
 A comprehensive utility library for Xbox 360 homebrew development, providing modern C++ features and utilities tailored for the Xbox 360 environment.
 
-#Features
+---
 
-JSON Parser/Serializer: Full JSON support with parsing and serialization capabilities
+## ✨ Features
 
-STL Extensions: Implementation of C++11 features missing from Xbox 360 SDK:
+- **JSON Parser/Serializer**  
+  Full JSON support with parsing and serialization capabilities.
 
-std::unique_ptr, std::make_unique
+- **STL Extensions**  
+  Implementation of missing C++11 features in the Xbox 360 SDK:  
+  - `std::unique_ptr`, `std::make_unique`  
+  - `std::mutex`, `std::condition_variable`, `std::lock_guard`  
+  - `std::future`, `std::promise`, `std::async`  
+  - Atomic operations and memory ordering  
 
-std::mutex, std::condition_variable, std::lock_guard
+- **Thread Pool**  
+  Efficient thread management for concurrent operations.
 
-std::future, std::promise, std::async
+- **Chrono Library**  
+  High-resolution timing and duration utilities.
 
-Atomic operations and memory ordering
+- **Filesystem Utilities**  
+  Cross-platform filesystem operations.
 
-Thread Pool: Efficient thread management for concurrent operations
+- **Network Library**  
+  Asynchronous TCP client with Xbox-specific networking support.
 
-Chrono Library: High-resolution timing and duration utilities
+- **String Utilities**  
+  Comprehensive string manipulation functions.
 
-Filesystem Utilities: Cross-platform filesystem operations
+- **Math Library**  
+  2D/3D vector and matrix operations.
 
-Network Library: Async TCP client with Xbox-specific networking
+- **Memory Utilities**  
+  Safe memory operations and casting functions.
 
-String Utilities: Comprehensive string manipulation functions
+- **Xbox-Specific Helpers**  
+  XAM function resolution and system utilities.
 
-Math Library: 2D/3D vector and matrix operations
+---
 
-Memory Utilities: Safe memory operations and casting functions
+## 📥 Installation
 
-Xbox-Specific Helpers: XAM function resolution and system utilities
+1. Copy **`cware.h`** into:
 
-#Installation
-
-copy cware.h into C:\Program Files (x86)\Microsoft Xbox 360 SDK\include\xbox
-the include it into your project with #include <cware.xex>
